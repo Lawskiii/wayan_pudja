@@ -1,0 +1,202 @@
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+  
+  
+}
+
+@font-face {
+  font-family: "Stardom";
+  src: url(/Fonts/Stardom_Complete/Stardom_Complete/Fonts/OTF/Stardom-.otf);
+}
+
+@font-face {
+  font-family: "SatoshiLight";
+  src: url(/Fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf);
+}
+
+@font-face {
+  font-family: "SatoshiRegular";
+  src: url(/Fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf);
+}
+
+@font-face {
+  font-family: "SatoshiMedium";
+  src: url(/Fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf);
+}
+
+
+@font-face {
+  font-family: "SatoshiBlack";
+  src: url(/Fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf);
+}
+
+:root{
+  --fs-regular:1.5rem;
+  --fs-xl:7rem;
+  --fs-l:3.2rem;
+  --fs-p:1.2rem;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#FFF6E3;
+  
+  overflow-x: hidden;
+}
+
+ul{
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+  margin: 0;
+  font-family: 'Stardom';
+  font-weight: 100;
+}
+
+p{
+  margin:0;
+}
+
+.Learn-More-button{
+  width: 190px;
+  height: 60px;
+  
+  background: none;
+  border-width: 2px;
+  font-family: 'SatoshiBlack';
+  font-size: var(--fs-p);
+  color: rgb(22, 22, 22);
+  border-radius: 30px;
+  transition: 0.2s all ease-in-out;
+}
+
+.Learn-More-button:hover{
+  background-color: rgb(22, 22, 22);
+  
+  color: #FFF6E3;
+  cursor: pointer;
+}
+
+.Learn-More-button:active{
+  background-color: #FFF6E3;
+  color:  rgb(22, 22, 22);
+}
+
+section{
+  position: relative;
+}
+
+footer{
+  position: relative;
+}
+
+.tag{
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 50px;
+  opacity: 0.8;
+  font-family: 'SatoshiLight';
+  color: #FFF6E3;
+  font-weight: 100;
+  
+}
+
+.header-line{
+  position: relative;
+  
+}
+
+.header-line h1{
+  font-size: var(--fs-l);
+  font-weight: 100;
+  color: black;
+  z-index: 1;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.header-line div{
+  width: 50%;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(243,194,91);
+  filter: blur(30px);
+}
+
+.Header img{
+  width: 130%;
+  height: 90vh;
+  object-fit: cover;
+  object-position:  right;
+  filter: brightness(80%) saturate(90%) contrast(105%);
+  
+  position: absolute;
+  z-index: -1;
+}
+
+
+.Header{
+  height: 90vh;
+  width: 100%;
+}
+
+
+.Header .wrapper{
+  height: 100%;
+}
+
+.header-text{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  height: 100%;
+}
+.header-text h1{
+  font-size: var(--fs-xl);
+  max-width: 500px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: -6px;
+}
+
+.paragraph{
+  font-family: 'SatoshiRegular';
+  max-width: 400px;
+  font-size: var(--fs-p);
+  line-height: 1.9rem;
+  font-weight: 300;
+  margin: 30px 0;
+}
+
+.text-header-paragraph{
+  line-height: 3.1rem;
+  font-size: var(--fs-l);
+  font-weight: 100;
+}
