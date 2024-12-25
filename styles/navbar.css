@@ -1,0 +1,95 @@
+.Navigation{
+  
+
+  background-color: rgba(0, 0, 0, 0.603);
+  backdrop-filter: blur(10px);
+  
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar{
+  padding: 0 200px;
+}
+
+.navbar ul li{
+  list-style: none;
+}
+
+.navbar ul li a,
+.contact-button {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'SatoshiLight';
+  font-size: var(--fs-regular);
+  position: relative;
+  color: white;
+  transition: 0.2 all ease-in-out;
+}
+
+.navbar ul li a{
+  opacity: 0.6;
+}
+
+.navbar ul li a:hover{
+  opacity: 1;
+}
+
+.navbar ul li a:after{
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: 0.2s all ease-in-out;
+  opacity: 0;
+}
+
+.navbar ul li a:hover:after{
+  width: 100%;
+  opacity: 100%;
+}
+
+.contact-button{
+  height: 60px;
+  width: 160px;
+  background: none;
+  border-radius: 75px;
+  border-style: solid;
+  border-width: 1px;
+  transition: all 0.2s   ease-in-out;
+  border-color: white;
+}
+
+.contact-button:hover{
+  background-color: #FFF6E3;
+  color: black;
+  cursor: pointer;
+}
+
+.contact-button:active{
+  background-color: black;
+  border-color: black;
+  color: #FFF6E3;
+  cursor: pointer;
+}
+
+
+
+.navbar  .logo{
+  width: 100px;
+  height: 100px;
+}

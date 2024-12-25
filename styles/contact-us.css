@@ -1,0 +1,119 @@
+.contact-container{
+  width: 1220px;
+  height: 550px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: #FFF6E3;
+  display: flex;
+  flex-direction: row;
+  padding: 80px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.contact-header-text{
+  width: 50%;
+  height: 100%;
+}
+
+.contact-header-text .header-line h1{
+  max-width: 250px;
+  text-align: start;
+  margin: 0;
+  font-size: 5rem;
+  line-height: 4rem;
+}
+
+.contact-header-text .header-line div{
+  max-width: 200px;
+  text-align: start;
+  margin: 0;
+  left: 0;
+  transform: translate(0);
+}
+
+.contact-input-container{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+}
+
+.input-type-container{
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, 40px);
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+  
+}
+
+.input-type-container input{
+  background: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  font-family: 'SatoshiRegular';
+  font-size: 0.9rem;
+  padding: 8px;
+}
+
+.email-address{
+  grid-area: 2/1/2/3;
+}
+
+.phone-number{
+  grid-area: 3/1/3/3;
+}
+
+.your-messages{
+  grid-area: 4/1/10/3;
+  background: none;
+  border-width: 2px;
+  border-style: solid;
+  resize: none;
+  border-color: black;
+  font-family: 'SatoshiRegular';
+  font-size: 0.9rem;
+  padding: 8px;
+}
+
+.contact-header-text .paragraph{
+  max-width: 350px;
+}
+
+.input-type-container button{
+  background: none;
+  border-style: solid;
+  font-family: 'SatoshiRegular';
+  font-size: var(--fs-paragraph);
+  width: 50%;
+  border-width: 2px;
+}
+
+.input-type-container input::placeholder,
+.your-messages::placeholder{
+  font-size: 0.9rem;
+  
+  font-family: 'SatoshiRegular';
+}
+
+.pageContainer{
+  filter: grayscale(1) blur(7px);
+  backdrop-filter: brightness(0.5);
+
+}
+
+body{
+  overflow-y: hidden;
+}
+
+
