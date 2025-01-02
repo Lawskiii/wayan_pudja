@@ -74,3 +74,25 @@
   text-align: center;
   margin-top: 10px;
 }
+
+.header-line.hidden{
+  scale: 0;
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.header-line.hidden.show{
+  scale: 1;
+  opacity: 1;
+}
+
+.collections-2-container.hidden{
+  padding: 0 120px;
+  
+  transition: all 1s ease-in-out;
+}
+
+.collections-2-container.hidden.show{
+  justify-content: space-between;
+  padding: 0 0;
+}

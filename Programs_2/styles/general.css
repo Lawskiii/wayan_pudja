@@ -73,6 +73,7 @@ p{
   color: rgb(22, 22, 22);
   border-radius: 30px;
   transition: 0.2s all ease-in-out;
+  border-style: solid;
 }
 
 .Learn-More-button:hover{
@@ -80,6 +81,7 @@ p{
   
   color: #FFF6E3;
   cursor: pointer;
+  
 }
 
 .Learn-More-button:active{
@@ -199,3 +201,13 @@ footer{
   font-weight: 100;
 }
 
+.hidden{
+  opacity: 0;
+  
+  transition: all 0.5s ease-in-out;
+}
+
+.hidden.show{
+  opacity: 1;
+  
+}
