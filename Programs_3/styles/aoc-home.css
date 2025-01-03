@@ -1,0 +1,142 @@
+
+
+.about-text.hidden :nth-child(1){
+  transform: translateY(-60px);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  
+}
+
+.about-text.hidden.show :nth-child(1){
+  transform: translateY(0px);
+  opacity: 1;
+}
+.about-text.hidden :nth-child(2){
+  transform: translateY(-60px);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transition-delay: 100ms;
+}
+
+.about-text.hidden.show :nth-child(2){
+  transform: translateY(0px);
+  opacity: 1;
+}
+.about-text.hidden :nth-child(3){
+  transform: translateY(-60px);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transition-delay: 200ms;
+}
+
+.about-text.hidden.show :nth-child(3){
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.about-text.hidden :nth-child(4){
+  transform: translateY(-60px);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transition-delay: 300ms;
+}
+
+.about-text.hidden.show :nth-child(4){
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.about-text.hidden :nth-child(5){
+  transform: translateY(-60px);
+  transition: opacity,transform 0.5s ease-in-out;
+  opacity: 0;
+  transition-delay: 400ms;
+}
+
+.about-text.hidden.show :nth-child(5){
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.about-image.hidden{
+  transform: translateY(-60px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.about-image.hidden.show{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/*FEATURES*/
+.features-image.hidden{
+  transform: translateX(30px);
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.features-image.hidden.show{
+  transform: translateX(0px);
+  opacity: 1;
+  
+}
+
+.features-text.hidden :nth-child(1){
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: all ease-in-out 1s;
+  
+}
+
+.features-text.hidden.show :nth-child(1){
+  transform: translateX(0px);
+  opacity: 1;
+  
+}
+
+.features-text.hidden :nth-child(2){
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: all ease-in-out 1s;
+  transition-delay: 200ms;
+}
+
+.features-text.hidden.show :nth-child(2){
+  transform: translateX(0px);
+  opacity: 1;
+  
+}
+
+.collection-container a.hidden
+{
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
+
+
+.collection-container a.hidden.show{
+  opacity: 1;
+  
+}
+
+.collection-contents.hidden div{
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all ease-in-out 1s;
+}
+
+.collection-contents.hidden.show div  {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.testimony-container.hidden div{
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
+
+.testimony-container.hidden.show div{
+  opacity: 1;
+  
+}

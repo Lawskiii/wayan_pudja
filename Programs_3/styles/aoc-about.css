@@ -1,0 +1,54 @@
+
+.about-container.hidden .about-text .about-text-header h4,
+.about-container.hidden .about-text .about-text-header h2,
+.about-container.hidden .about-text p
+{
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all ease-in-out 0.5s;
+}
+
+
+.about-container.hidden.show .about-text .about-text-header h4,
+.about-container.hidden.show .about-text .about-text-header h2,
+.about-container.hidden.show .about-text p{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.about-img.hidden{
+  opacity: 0;
+  transition: all ease-in-out 1.5s;
+}
+
+.about-img.hidden.show{
+  opacity: 1;
+}
+
+.carver-container.hidden .carver-text,
+.carver-container.hidden .carver-image{
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all ease-out 0.5s;
+}
+
+.carver-container.hidden.show .carver-text,
+.carver-container.hidden.show .carver-image{
+  transform: translateX(0px);
+  opacity: 1;
+  
+}
+
+.carver-container_2.hidden .carver-text,
+.carver-container_2.hidden .carver-image{
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all ease-out 0.5s;
+}
+
+.carver-container_2.hidden.show .carver-text,
+.carver-container_2.hidden.show .carver-image{
+  transform: translateX(0px);
+  opacity: 1;
+  
+}

@@ -1,0 +1,33 @@
+.collection-content.type1.hidden div{
+  transform: translateX(60px);
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
+
+.collection-content.type1.hidden.show div{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.collection-content.type2.hidden div{
+  transform: translateX(-60px);
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
+
+.collection-content.type2.hidden.show div{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.collections-2-container.hidden div{
+  transform: translateX(-80px);
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
+
+.collections-2-container.hidden.show div{
+  transform: translateX(0px);
+  opacity: 1;
+  
+}
